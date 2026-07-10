@@ -4,3 +4,10 @@ __pycache__/
 .pytest_cache/
 .streamlit/secrets.toml
 data_cache/
+
+# Licensed WRDS research data (TRACE/FISD/CRSP) - NEVER commit or publish
+SFU-bondpaper/
+*.dta
+*.sas7bdat
+*.csv.gz
+.Rhistory
