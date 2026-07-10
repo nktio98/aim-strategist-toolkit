@@ -1,10 +1,33 @@
-# AIM Strategist Toolkit
+# FI Macro Lab
 
-Quant toolkit mirroring the core processes of an insurance investment
-strategist role (Allianz Investment Management style): yield curve
-modeling, regime detection, ALM-aware stress testing, FX analytics,
-TAA validation, manager oversight, and view-conditioned allocation —
-running on **live FRED data** with an interactive **Streamlit app**.
+Fixed-income & macro analysis lab: multi-economy yield curves, regime
+detection, credit research, FX analytics, scenario risk, and honest
+signal validation — running on **live free data** (FRED, ADB, ECB,
+Japan MoF) with an interactive **Streamlit app**, plus a reproducible
+**corporate-bond mispricing research pipeline**.
+
+## Research: corporate bond mispricing (`research/`)
+
+Refactored, testable pipeline behind *"Credit Spread Mispricing and
+Expected Returns in U.S. Corporate Bonds"* (Tiosudarmin, 2025):
+monthly cross-sectional spread model → mispricing residual →
+Fama-MacBeth / quintile sorts / corporate 3-factor model / two-pass
+tests on a ~1.9M bond-month TRACE-FISD panel (2002-2020).
+
+- One generic Fama-MacBeth engine replaces five near-identical script
+  functions; every paper spec is a configuration of it.
+- CUSIP→PERMNO linking now respects link validity windows
+  (`mode="window"`); the original CUSIP-only merge is kept as
+  `mode="naive"` for exact replication and to quantify the fix.
+- Winsorization is parameterized (`pooled` reproduces the code,
+  `monthly` matches the paper text — a documented discrepancy).
+- Unit-tested end-to-end on synthetic panels with planted premia
+  (`tests/test_research.py`); the licensed WRDS inputs are gitignored
+  and never enter tests or the public artifact bundle.
+- `python -m research.run_paper` reproduces the paper and writes
+  public-safe aggregate artifacts to `research_artifacts/`.
+
+## Toolkit modules
 
 ## Quick start
 

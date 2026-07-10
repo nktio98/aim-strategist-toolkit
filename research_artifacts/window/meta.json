@@ -1,0 +1,16 @@
+{
+  "mode": "window",
+  "winsorize": "pooled",
+  "n_obs": 836353,
+  "n_months": 217,
+  "runtime_s": 53.3,
+  "ls_stats": {
+    "n_months": 215,
+    "mean_monthly": 0.000961,
+    "std_monthly": 0.005809,
+    "t_stat": 2.424757,
+    "ann_mean": 0.011527,
+    "ann_sharpe": 0.572848
+  },
+  "avg_first_stage_r2": 0.1941
+}

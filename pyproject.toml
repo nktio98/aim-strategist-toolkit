@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aim-toolkit"
-version = "0.2.0"
-description = "Insurance investment-strategist toolkit: yield curves, regimes, ALM stress, FX, TAA validation, manager oversight, allocation"
+name = "fi-macro-lab"
+version = "0.3.0"
+description = "Fixed-income & macro analysis lab: multi-economy curves, regimes, credit research (bond mispricing), FX, scenario risk, honest signal validation"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -19,9 +19,10 @@ dependencies = [
 [project.optional-dependencies]
 app = ["streamlit>=1.30", "plotly>=5.18"]
 test = ["pytest>=7.0", "statsmodels>=0.14"]
+research = ["pyarrow>=14.0"]
 
 [tool.setuptools.packages.find]
-include = ["aim_toolkit*"]
+include = ["aim_toolkit*", "research*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
