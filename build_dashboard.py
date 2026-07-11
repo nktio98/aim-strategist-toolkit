@@ -6,8 +6,8 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from aim_toolkit.dashboard import Dashboard
-from aim_toolkit import fx
+from toolkit.dashboard import Dashboard
+from toolkit import fx
 
 # 1) refresh all module outputs
 for script in ("run_demo.py", "run_fx_demo.py", "run_taa_demo.py",

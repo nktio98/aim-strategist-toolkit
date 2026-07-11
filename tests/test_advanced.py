@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from aim_toolkit import monitoring, stress
-from aim_toolkit.data import simulate_yields
-from aim_toolkit.fx import dcc_hedge_ratio, garch11
-from aim_toolkit.macro import irf_summary, local_projections
-from aim_toolkit.nowcast import activity_factor
-from aim_toolkit.yield_curve import ACMTermPremium, AFNSModel, DNSModel, \
+from toolkit import monitoring, stress
+from toolkit.data import simulate_yields
+from toolkit.fx import dcc_hedge_ratio, garch11
+from toolkit.macro import irf_summary, local_projections
+from toolkit.nowcast import activity_factor
+from toolkit.yield_curve import ACMTermPremium, AFNSModel, DNSModel, \
     afns_adjustment
 
 rng = np.random.default_rng(2)

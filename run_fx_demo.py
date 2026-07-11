@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from aim_toolkit import fx
+from toolkit import fx
 
 OUT = "outputs"
 rng = np.random.default_rng(11)

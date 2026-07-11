@@ -3,13 +3,13 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from aim_toolkit import allocation as al
-from aim_toolkit import stress, taa
-from aim_toolkit.dashboard import Dashboard
-from aim_toolkit.data import parse_maturity, simulate_market, simulate_yields
-from aim_toolkit.fx import ECMFairValue, min_var_hedge_ratio
-from aim_toolkit.regimes import GaussianMS, JumpModel
-from aim_toolkit.yield_curve import DNSModel, ns_loadings
+from toolkit import allocation as al
+from toolkit import stress, taa
+from toolkit.dashboard import Dashboard
+from toolkit.data import parse_maturity, simulate_market, simulate_yields
+from toolkit.fx import ECMFairValue, min_var_hedge_ratio
+from toolkit.regimes import GaussianMS, JumpModel
+from toolkit.yield_curve import DNSModel, ns_loadings
 
 rng = np.random.default_rng(1)
 

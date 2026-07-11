@@ -5,10 +5,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from aim_toolkit.data import simulate_yields, simulate_market, MATURITIES
-from aim_toolkit.yield_curve import DNSModel, ns_loadings
-from aim_toolkit.regimes import GaussianMS, JumpModel, regime_summary
-from aim_toolkit import stress
+from toolkit.data import simulate_yields, simulate_market, MATURITIES
+from toolkit.yield_curve import DNSModel, ns_loadings
+from toolkit.regimes import GaussianMS, JumpModel, regime_summary
+from toolkit import stress
 
 OUT = "outputs"
 

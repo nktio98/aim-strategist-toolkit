@@ -3,7 +3,7 @@ canned payloads; live-endpoint smoke tests skip when the network is down."""
 import numpy as np
 import pytest
 
-from aim_toolkit import data_global as dg
+from toolkit import data_global as dg
 
 CANNED_XML = """<?xml version="1.0" encoding="iso-8859-1"?>
 <rows>

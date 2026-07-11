@@ -6,9 +6,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from aim_toolkit import data_live, stress
-from aim_toolkit.regimes import JumpModel, regime_summary
-from aim_toolkit.yield_curve import DNSModel, ns_loadings
+from toolkit import data_live, stress
+from toolkit.regimes import JumpModel, regime_summary
+from toolkit.yield_curve import DNSModel, ns_loadings
 
 OUT = "outputs"
 

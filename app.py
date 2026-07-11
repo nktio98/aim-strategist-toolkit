@@ -33,16 +33,16 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import streamlit as st
 
-from aim_toolkit import allocation as al
-from aim_toolkit import data, data_global, data_live, fx, macro, managers, \
+from toolkit import allocation as al
+from toolkit import data, data_global, data_live, fx, macro, managers, \
     monitoring, nowcast, stress, taa
-from aim_toolkit.bvar import MinnesotaBVAR
-from aim_toolkit.regimes import GaussianMS, JumpModel, regime_summary
-from aim_toolkit.statespace import KalmanDNS, ShadowRateDNS
-from aim_toolkit.yield_curve import ACMTermPremium, DNSModel, ns_loadings, \
+from toolkit.bvar import MinnesotaBVAR
+from toolkit.regimes import GaussianMS, JumpModel, regime_summary
+from toolkit.statespace import KalmanDNS, ShadowRateDNS
+from toolkit.yield_curve import ACMTermPremium, DNSModel, ns_loadings, \
     smith_wilson
 
-st.set_page_config(page_title="AIM Strategist Dashboard — Asia",
+st.set_page_config(page_title="FI Macro Lab",
                    layout="wide")
 
 ASIA_NAMES = data_global.ABO_ECONOMIES

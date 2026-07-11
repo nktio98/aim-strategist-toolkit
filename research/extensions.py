@@ -21,8 +21,8 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from aim_toolkit.managers import _newey_west_se
-from aim_toolkit.regimes import JumpModel
+from toolkit.managers import _newey_west_se
+from toolkit.regimes import JumpModel
 
 from .config import IG_LABEL, MIN_OBS_QUINTILES
 from .fmb import fama_macbeth

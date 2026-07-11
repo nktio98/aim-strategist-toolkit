@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from aim_toolkit import managers as mg
+from toolkit import managers as mg
 
 OUT = "outputs"
 rng = np.random.default_rng(21)

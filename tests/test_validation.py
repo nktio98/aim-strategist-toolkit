@@ -9,9 +9,9 @@ from statsmodels.stats.multitest import multipletests
 from statsmodels.tsa.api import VAR
 from statsmodels.tsa.stattools import adfuller
 
-from aim_toolkit.fx import adf_tstat
-from aim_toolkit.managers import _newey_west_se, benjamini_hochberg, factor_regression
-from aim_toolkit.yield_curve import VAR1
+from toolkit.fx import adf_tstat
+from toolkit.managers import _newey_west_se, benjamini_hochberg, factor_regression
+from toolkit.yield_curve import VAR1
 
 rng = np.random.default_rng(0)
 

@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from aim_toolkit import stress
-from aim_toolkit.bvar import MinnesotaBVAR
-from aim_toolkit.data import simulate_yields
-from aim_toolkit.managers import bootstrap_skill_test
-from aim_toolkit.statespace import KalmanDNS, ShadowRateDNS
-from aim_toolkit.yield_curve import DNSModel, ns_loadings, smith_wilson
+from toolkit import stress
+from toolkit.bvar import MinnesotaBVAR
+from toolkit.data import simulate_yields
+from toolkit.managers import bootstrap_skill_test
+from toolkit.statespace import KalmanDNS, ShadowRateDNS
+from toolkit.yield_curve import DNSModel, ns_loadings, smith_wilson
 
 rng = np.random.default_rng(3)
 

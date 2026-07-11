@@ -22,7 +22,7 @@ test = ["pytest>=7.0", "statsmodels>=0.14"]
 research = ["pyarrow>=14.0"]
 
 [tool.setuptools.packages.find]
-include = ["aim_toolkit*", "research*"]
+include = ["toolkit*", "research*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
